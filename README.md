@@ -1,12 +1,23 @@
-# video-gen
+# VideoGenFrontEnd
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.2.
+## Mise en place
 
-## Build & development
+### FrontEnd
+Accessible depuis le port 9000
 
-Run `grunt` for building and `grunt serve` for preview.
+**Lancement du serveur**      
+grunt serve
 
-## Testing
+Ce projet fonctionne avec le BackEnd git clone https://github.com/Kwodhan/VideoGenBackEnd
 
-Running `grunt test` will run the unit tests with karma.
+### BackEnd
+Accessible depuis le port 8080
+
+**Mise en place des médias**      
+On met le dossier “Video” dans le bon emplacement dans le répertoire home de l’utilisateur (~). Le dossier “Video” est présent dans le dossier du répertoire git.
+
+**Lancement de la BDD HSql**      
+./run-hsqldb-server.sh
+
+**Lancement du serveur**      
+./java -jar server-1.0.jar
