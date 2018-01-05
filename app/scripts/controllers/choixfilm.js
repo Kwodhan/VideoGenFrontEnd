@@ -37,11 +37,14 @@ angular.module('videoGenApp')
       if(choixFilm.length == 3){
 
         var myEl = angular.element( document.querySelector( '#link' ) );
-        myEl.append('<a href="'+urlBack+'/generator/request?acteur='+$routeParams.id+'&film1='+choixFilm[0]+'&film2='+choixFilm[1]+'&film3='+choixFilm[2]+'" id="download" class="btn btn-info center-block" role="button">Télécharge ton Quizz</a>');
+        myEl.append('<a ng-click="download()" href="'+urlBack+'/generator/request?acteur='+$routeParams.id+'&film1='+choixFilm[0]+'&film2='+choixFilm[1]+'&film3='+choixFilm[2]+'" id="download" class="btn btn-info center-block" role="button" >Télécharge ton Quizz</a>');
+        myEl.append('<h5 id="textIndication">La création du Quizz peut prendre plusieurs secondes</h5>');
         $anchorScroll('download');
       } else {
         var myEl = angular.element( document.querySelector('#download' ));
         myEl.remove();
+        var myEl2 = angular.element( document.querySelector('#textIndication' ));
+        myEl2.remove();
       }
 
 }
