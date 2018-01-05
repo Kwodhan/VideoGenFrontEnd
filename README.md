@@ -21,3 +21,7 @@ On met le dossier “Video” dans le bon emplacement dans le répertoire home d
 
 **Lancement du serveur**      
 ./java -jar server-1.0.jar
+
+## Warning
+
+Les Dockerfiles ne fonctionnent pas
